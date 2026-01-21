@@ -16,6 +16,7 @@ for i in range(len(teams)):
     rank_data.append([teams[i], wins_list[i]])
 
 # 정렬
+# key = 1번 인덱스 승수 기준, reverse=True = 높은 순서대로
 rank_data.sort(key=lambda x: x[1], reverse=True)
 
 print("\n--- 2025 KBO 최종 순위표 ---")

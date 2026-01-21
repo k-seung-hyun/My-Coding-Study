@@ -15,4 +15,8 @@ print("\n--- 실시간 야구 순위표 (입력순) ---")
 
 # 리스트 두 개를 합쳐서 출력
 for i in range(len(teams)):
-    print(f"{i+1}번째 팀: {teams[i]} ({wins_list[i]}승)")
+    print(f"{i+1}위 예상: {teams[i]} ({wins_list[i]}승)")
+
+# 문제점 발생. 승리 수와 관계 없이 입력순으로 순위를 결정하게 된다.
+# 해결 방법? 팀과 점수를 하나로 묶어서 점수 기준으로 정렬해야 한다.
+# practice_baseball_v2.py 에서 계속 ...
